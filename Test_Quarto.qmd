@@ -11,7 +11,7 @@ Plants were grown in three media with ten replications per media. conduct a comp
 
 *1. State the biological question (2 marks)*
 
-Is there a difference in height (cm) of plants grown in different media? 
+Is there a difference in height (cm) of plants grown in different media?
 
 *2. State the statistical question as a null hypothesis*
 
@@ -20,3 +20,14 @@ H0: There is no difference in the mean
 *3. State which test is appropriate to use*
 
 The data used is measurement data and it is biological, therefore normality is assumed. There are three different groups being analysed (above two), each are independent. Only one independent variable is being tested, therefore a one way ANOVA is used.
+
+*4. Write three sentences presenting the results of the test, showing all necessary information*
+
+```{r}
+    #| label: reading data and ANOVA test
+
+    quiz <-read.csv("quiz2_plant_height.csv")
+
+    fit3 <-aov(height~Media, data = quiz)
+    summary(fit3)
+```

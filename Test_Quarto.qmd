@@ -36,4 +36,11 @@ The data used is measurement data and it is biological, therefore normality is a
 #| label: ANOVA results 
 
 summary(fit)
+
+plotmeans(quiz$height~quiz$Media,
+          main= "Mean Height (cm) of Plants Per Growth Medium",
+          xlab= "Growth Medium",
+          ylab = "Height (cm)  +/- 95% CI",
+          connect = F,
+          n.label = F)
 ```

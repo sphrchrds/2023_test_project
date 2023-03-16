@@ -24,18 +24,30 @@ The data used is measurement data and it is biological, therefore normality is a
 *4. Write three sentences presenting the results of the test, showing all necessary information*
 
 ```{r}
-    #| label: Reading in data, installing packages ANOVA testing
-
-    quiz <-read.csv("quiz2_plant_height.csv")
+    
+#| label: Reading in data, installing packages
+  install.packages(gplots)
+  library(gplots)
+  
+  quiz <-read.csv("quiz2_plant_height.csv")
     
 ```
 
 ```{r}
 #| include: false
-#| label: ANOVA results 
+#| label: ANOVA testing and results 
+
+fit <-aov(height~Media, data = quiz)
 
 summary(fit)
 
+```
+
+## *Figure 1*
+
+```{r}
+#| include: false
+#| label: Mean Height of Plants Per Growth Medium
 plotmeans(quiz$height~quiz$Media,
           main= "Mean Height (cm) of Plants Per Growth Medium",
           xlab= "Growth Medium",

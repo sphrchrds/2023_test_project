@@ -24,10 +24,9 @@ The data used is measurement data and it is biological, therefore normality is a
 *4. Write three sentences presenting the results of the test, showing all necessary information*
 
 ```{r}
-    #| label: Reading in data and ANOVA testing
+    #| label: Reading in data, installing packages ANOVA testing
 
     quiz <-read.csv("quiz2_plant_height.csv")
-    fit <-aov(height~Media, data = quiz)
     
 ```
 

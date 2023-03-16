@@ -32,7 +32,8 @@ The data used is measurement data and it is biological, therefore normality is a
 ```
 
 ```{r}
-#| label: ANOVA results
 #| include: false
+#| label: ANOVA results 
 
-summary(fit3)
+summary(fit)
+```

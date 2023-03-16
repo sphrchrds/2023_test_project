@@ -4,3 +4,19 @@ author: "Sophie Richards"
 format: html
 date: "16/03/2023"
 ---
+
+## BVB202 - Week 2 Quiz
+
+Plants were grown in three media with ten replications per media. conduct a complete analysis of the data to determine whether there are any differences in the heights of plants grown in the different media
+
+*1. State the biological question (2 marks)*
+
+Is there a difference in height (cm) of plants grown in different media? 
+
+*2. State the statistical question as a null hypothesis*
+
+H0: There is no difference in the mean
+
+*3. State which test is appropriate to use*
+
+The data used is measurement data and it is biological, therefore normality is assumed. There are three different groups being analysed (above two), each are independent. Only one independent variable is being tested, therefore a one way ANOVA is used.
